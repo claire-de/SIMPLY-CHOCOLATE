@@ -1,0 +1,142 @@
+html{
+    scroll-behavior: smooth;
+}
+a:visited{
+    text-decoration: none;
+    color: #000000;
+}
+body{
+    background: #F8F8F4;
+}
+header{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+.header{
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.header-right{
+    font-family: Libre Baskeville, serif;
+    font-size: 13px;
+    color: #000000;
+    letter-spacing: .01em;
+    line-height: 2em;
+}
+.header-logo{
+    width: auto;
+    height: auto;
+    transform: rotate(-90deg);
+}
+.header-left{
+    font-family: Social Gothic;
+    font-weight: 500;
+    font-size: 1em;
+    color: #000000;
+}
+.header-tab{
+    list-style-type: none;
+    display: flex;
+    justify-content:right;
+}
+.tab-list{
+    transform: rotate(-90deg);
+    width: 25px;
+    display: flex;
+    justify-content: right;
+}
+footer{
+    height: 120px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+}
+.footer{
+    display: flex;
+    justify-content: flex-start;
+}
+.shop-button{
+    font-family: Social Gothic;
+    font-weight: 500;
+    line-height: 1.6em;
+    font-size: 1em;
+    margin-bottom: 130px;
+    border: 1px #814B1E;
+    width: 50px;
+    height: 10px;
+    margin-left: 120px;
+    margin-bottom: 10px;
+}
+.shop-button-content{
+    text-decoration: none;
+}
+
+
+
+.top-color{
+    background-color: #814B1E;
+    position: fixed;
+    top: 0;
+    width: 1440px;
+    height: 10px;
+}
+.content-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CrispyCarrie-open{
+    width: 400px;
+    position: fixed;
+    top: 300px;
+}
+.CrispyCarrie-wrapper{
+    width: 400px;
+    position: fixed;
+    top: 250px;
+    left: 400px;
+}
+.title-wrapper{
+    position: absolute;
+    top: 160px;
+    left: 10px;
+    font-family: Social Gothic;
+    font-weight: 600;
+    font-size: 212.174px;
+    line-height: 1em;
+    color: #C37E2C;
+    z-index: -1;
+}
+.content-wrapper-wrapper{
+    margin: auto;
+    width: 55%;
+    margin-top: 750px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Baskeville, serif;
+}
+.content-wrapper1{
+    width: 40%;
+}
+.content-wrapper2{
+    width: 40%;
+}
+.content-title{
+    font-family: Social Gothic;
+    font-weight: 500;
+    line-height: 1.6em;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.content-content{
+    margin-bottom: 80px;
+    line-height: 1.8em;
+    font-size: 18px;
+}

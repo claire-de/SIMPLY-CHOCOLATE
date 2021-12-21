@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/crispy-carrie.css" rel="stylesheet">
+    <title>crispy-carrie</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<body>
+    <header>
+        <div class = "header">
+            <div class = "header-right">
+                <div class = "header-logo"> Simply Chocolate </div>
+            </div>
+            <div class = "header-left">
+                <ul class="header-tab">
+                    <li class = "tab-list" id = "tab-shop">
+                        <a href = "https://shop.simplychocolate.dk/"> SHOP </a>
+                    </li>
+                    <li class = "tab-list" id = "tab-csr">
+                        <a href = "https://simplychocolate.dk/csr/"> CSR </a>
+                    </li>
+                    <li class = "tab-list" id = "tab-news">
+                        <a href = "https://simplychocolate.dk/news/"> NEWS </a>
+                    </li>
+                    <li class = "tab-list" id ="tab-about">
+                        <a href = "https://simplychocolate.dk/about/"> ABOUT </a>
+                    </li>
+                    <li class = "tab-list" id = "tab-stores">
+                        <a href = "https://simplychocolate.dk/stores/"> STORES </a>
+                    </li>
+                    <li class = "tab-list" id = "tab-contact">
+                        <a href = "https://simplychocolate.dk/contact/"> CONTACT </a>
+                    </li>
+                    <li class = "tab-list" id = "tab-careers">
+                        <a href = "https://simplychocolate.dk/careers/"> CAREERS </a>
+                    </li>
+                    <li class ="tab-list" id = "tab-catalogue">
+                        <a href = "https://simplychocolate.dk/catalogue/"> CATALOGUE </a>
+                    </li>
+                    <li class = "tab-list" id = "tab-retail">
+                        <a href = "https://simplychocolate.dk/travelretail/"> TRAVEL RETAIL </a>
+                    </li>
+                    <li class = "tab-list" id = "tab-horizons">
+                        <a href = "https://simplychocolate.dk/cocoahorizons/"> COCOA HORIZONS </a>
+                    </li>
+                    <li class = "tab-list" id = "tab-solutions">
+                        <a href = "https://simplychocolate.dk/corporatesolutions/"> CORPORATE SOLUTIONS </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class = "top-color"></div>
+    <div class = "content-wrapper">
+        <img class = "CrispyCarrie-open" src = "assets/img/crispy-carrie-open.png">
+        <img class = "CrispyCarrie-wrapper" src = "assets/img/crispy-carrie-wrapper.png">
+    </div>
+    <div class = "title-wrapper">  
+        <div> CRISPY </div>
+        <div> CARRIE </div>
+    </div>
+    <div class = "content-wrapper-wrapper">
+        <div class = "content-wrapper1">
+            <div class = "content1">
+                <div class = "content-title"> NO FAKES HERE! </div>
+                <div class = "content-content"> You might think of a certain Bradshaw and thats actually not completely wrong. This lady doesn't want any fakes and so the salty caramel crunch is simply the best you'll ever have. </div>
+            </div>
+            <div class = "content2">
+                <div class = "content-title"> SOFT AND EDGY </div>
+                <div class = "content-content"> A fashionable mix of flaky sea salt in combination with crunchy homemade caramel pieces all wrapped in the softes coat of premium milk chocolate. </div>
+            </div>
+        </div>
+        <div class = "content-wrapper2">
+            <div class = "content1">
+                <div class = "content-title"> INGREDIENTS </div>
+                <div class = "content-content"> Milkchocolate (sugar, cocoabutter, whole MILK powder, natural vanilla aroma, emulsifier: SOY lecithin) (90%), SOY protein, caramel flakes (sugar, glucose syrup, whole MILK powder, condensed MILK, BUTTER, sea salt, (4,3%)), sea salt (0,4%)
+                    (Ingredient list and nutrient content may vary. Always see the current packaging for correct information about the ingredients in the product) </div>
+            </div>
+            <div class = "content2">
+                <div class = "content-title"> NUTRITIONAL CONTENT / 100G </div>
+                <div class = "content-content"> A fashionable mix of flaky sea salt in combination with crunchy homemade caramel pieces all wrapped in the softes coat of premium milk chocolate. </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class = "footer">
+            <div class = "shop-button" style = "width: 50px; height: 10px; border: #814B1E;">
+                <a class = "shop-button-content" href = "https://shop.simplychocolate.dk/products/crispy-carrie" style = "color: #814B1E;"> SHOP </a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    var window_width = $('.CrispyCarrie-wrapper').width() - $(window).width();
+    var document_height = $(document).height() - $(window).height();
+    $(function () {
+        $(window).scroll(function () {
+            var scroll_position = $(window).scrollTop();
+            var object_position_left = window_width * (scroll_position / document_height);
+            $('.CrispyCarrie-wrapper').css({
+                'left': object_position_left + 400
+            });
+        });
+    });
+    var window_width2 = $(window).width()
+    var document_height2 = $(document).height() - $(window).height();
+    $(function () {
+        $(window).scroll(function () {
+            var scroll_position2 = $(window).scrollTop();
+            var object_position_left2 = window_width2 * (scroll_position2 / document_height2);
+            $('.top-color').css({
+                'left': object_position_left2
+            });
+        });
+    });
+</script>
+</html>

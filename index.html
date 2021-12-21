@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/index.css" rel="stylesheet">
+    <title>Simply Chocolate</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<body>
+    <header>
+        <div class = "header">
+            <div class = "header-right">
+                <div class = "header-logo"> Simply Chocolate </div>
+            </div>
+            <div class = "header-left">
+                <ul class="header-tab">
+                    <li class = "tab-list" id = "tab-shop">
+                        <a href = "https://shop.simplychocolate.dk/"> SHOP </a>
+                    </li>
+                    <li class = "tab-list" id = "tab-csr">
+                        <a href = "https://simplychocolate.dk/csr/"> CSR </a>
+                    </li>
+                    <li class = "tab-list" id = "tab-news">
+                        <a href = "https://simplychocolate.dk/news/"> NEWS </a>
+                    </li>
+                    <li class = "tab-list" id ="tab-about">
+                        <a href = "https://simplychocolate.dk/about/"> ABOUT </a>
+                    </li>
+                    <li class = "tab-list" id = "tab-stores">
+                        <a href = "https://simplychocolate.dk/stores/"> STORES </a>
+                    </li>
+                    <li class = "tab-list" id = "tab-contact">
+                        <a href = "https://simplychocolate.dk/contact/"> CONTACT </a>
+                    </li>
+                    <li class = "tab-list" id = "tab-careers">
+                        <a href = "https://simplychocolate.dk/careers/"> CAREERS </a>
+                    </li>
+                    <li class ="tab-list" id = "tab-catalogue">
+                        <a href = "https://simplychocolate.dk/catalogue/"> CATALOGUE </a>
+                    </li>
+                    <li class = "tab-list" id = "tab-retail">
+                        <a href = "https://simplychocolate.dk/travelretail/"> TRAVEL RETAIL </a>
+                    </li>
+                    <li class = "tab-list" id = "tab-horizons">
+                        <a href = "https://simplychocolate.dk/cocoahorizons/"> COCOA HORIZONS </a>
+                    </li>
+                    <li class = "tab-list" id = "tab-solutions">
+                        <a href = "https://simplychocolate.dk/corporatesolutions/"> CORPORATE SOLUTIONS </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class = "first-page-overlay">
+        <div class = "title-content">
+            <div class = "title-wrapper">
+                <div class = "title" id = "title-row1">
+                    MAKE YOUR
+                </div>
+                <div class = "title" id = "title-row1">
+                    X-MAS PRETTY
+                </div>
+                <div class = "title" id = "title-row1">
+                    AND SWEET
+                </div>
+            </div>
+            <div class = "subtitle-wrapper">
+                <div class = "subtitle">
+                    <a href = "https://shop.simplychocolate.dk/collections/jul"> CHOKOLADE TIL GAVER, JULEAFTEN, ADVENT - YOU NAME IT. </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = "content-wrapper">
+        <img class = "CrispyCarrie-closed" src = "assets/img/CrispyCarrie_37f65ceb-38e5-412b-8095-581719174ff6_1000x.png">
+    </div>
+    <div class = "page" id = "page2">
+        Hello
+    </div>
+    <footer>
+        <div class = "footer">
+            <div class = "footer-right">
+                <a href = "index.html#page2"> SCROLL TO SHOP </a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    ("a").on('click', function(event) {
+        if (this.hash !== "#page2") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+                }, 800, function(){
+                window.location.hash = hash;
+            });
+        }
+    });
+
+</script>
+</html>

@@ -1,0 +1,120 @@
+html{
+    scroll-behavior: smooth;
+}
+a:visited{
+    text-decoration: none;
+    color: #ffffff;
+}
+body{
+    background: linear-gradient(to right,#61300E,#9E642D);
+}
+header{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+.header{
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.header-right{
+    font-family: Libre Baskeville, serif;
+    font-size: 13px;
+    color: #ffffff;
+    letter-spacing: .01em;
+    line-height: 2em;
+}
+.header-logo{
+    width: auto;
+    height: auto;
+    transform: rotate(-90deg);
+}
+.header-left{
+    font-family: Social Gothic;
+    font-weight: 500;
+    line-height: 1.6em;
+    font-size: 1em;
+    color: #ffffff;
+}
+.header-tab{
+    list-style-type: none;
+    display: flex;
+    justify-content:right;
+}
+.tab-list{
+    transform: rotate(-90deg);
+    width: 25px;
+    display: flex;
+    justify-content: right;
+}
+.first-page-overlay{
+    background-image: url('https://simplychocolate.dk/wp-content/uploads/2019/12/SC_Jul2019Februar_12-1-e1638257720925.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.title-content{
+    margin: auto;
+    width: 85%;
+    margin-top: 40px;
+}
+.title-wrapper{
+    margin-bottom: 32px;
+}
+.title{
+    font-family: Social Gothic;
+    font-size: 77.75px;
+    font-weight: 500;
+    line-height: 1em;
+    color: #ffffff;
+}
+.subtitle-wrapper{
+    margin-bottom: 160px;
+}
+.subtitle{
+    font-family: Social Gothic;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1em;
+    color: #ffffff;
+}
+.content-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.CrispyCarrie-closed{
+    position: absolute;
+    bottom: 15px;
+    width: 650px;
+}
+#page2{
+    z-index: 3;
+}
+footer{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+}
+.footer{
+    display: flex;
+    justify-content: flex-end;
+}
+.footer-right{
+    font-family: Social Gothic;
+    font-weight: 500;
+    line-height: 1.6em;
+    font-size: 1em;
+    transform: rotate(-90deg);
+    margin-bottom: 130px;
+}
